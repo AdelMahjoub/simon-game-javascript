@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Simon Game</title>
+        <meta name="description" content="Simon Game">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">Simon Game</a>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <a href="">Github</a>
+            </li>
+            <li>
+                <a href="https://www.freecodecamp.com/adelmahjoub">Freecodecamp</a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+    
+    <div id="board">
+        <div class="cell red" id="0"></div>
+        <div class="cell yellow" id="1"></div>
+        <div id="brand">Simon Game</div>
+        <div class="cell blue" id="2"></div>
+        <div class="cell green" id="3"></div>
+    </div>
+    <div id="panel">
+        <div id="powerLed" class="led-red"></div>
+        <div id="scoreScreen"></div>
+        <div id="strictLed" class="led-red"></div>
+    </div>
+    <div id="pad">
+        <button id="powerBtn">ON/OFF</button>
+        <button id="startBtn">START</button>
+        <button id="resetBtn" class="hide">RESET</button>
+        <button id="strictBtn">STRICT</button>
+    </div>  
+
+    <audio id="sound0" src="./sfx/simonSound1.mp3" autostart="false"></audio>
+    <audio id="sound1" src="./sfx/simonSound2.mp3" autostart="false"></audio>
+    <audio id="sound2" src="./sfx/simonSound3.mp3" autostart="false"></audio>
+    <audio id="sound3" src="./sfx/simonSound4.mp3" autostart="false"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
